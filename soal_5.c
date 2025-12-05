@@ -5,7 +5,7 @@
 
 int main(){
     int choice = 0;
-    char word[256],result[256];
+    char word[1024],result[1024];
     while(choice != 3){
         printf("Program tOGGLE cASE\n");
         printf("1. Input kalimat\n");
@@ -19,7 +19,7 @@ int main(){
         {
         case 1:
             printf("Masukan Kalimat: ");
-            fgets(word,256,stdin);
+            fgets(word,1024,stdin);
             word[strcspn(word, "\n")] = '\0';
             break;
         case 2:
